@@ -1,9 +1,9 @@
-SublimeLinter-contrib-standard
+ide-plugin-sublime
 ================================
 
-[![Build Status](https://travis-ci.org/Flet/SublimeLinter-contrib-standard.svg?branch=master)](https://travis-ci.org/Flet/SublimeLinter-contrib-standard)
+[![Build Status](https://travis-ci.org/modern-standard/ide-plugin-sublime.svg?branch=master)](https://travis-ci.org/modern-standard/ide-plugin-sublime)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [standard](https://www.npmjs.com/package/standard). It will be used with files that have the “javascript” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [modern-standard](https://www.npmjs.com/package/modern-standard). It will be used with files that have the “javascript” syntax. This is a fork of the upstream plugin in order to support modern-standard.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
@@ -15,7 +15,7 @@ Before using this plugin, you must ensure that `standard` is installed on your s
 
 1. Install `standard` by typing the following command in a terminal:
    ```
-   npm install -g standard
+   npm install -g modern-standard
    ```
 
 1. If you are using `nvm` and `zsh`, ensure that the line to load `nvm` is in `.zshenv` and not `.zshrc`.
@@ -25,7 +25,7 @@ Before using this plugin, you must ensure that `standard` is installed on your s
 ### Linter configuration
 In order for `standard` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
-Once you have installed and configured `standard`, you can proceed to install the SublimeLinter-contrib-standard plugin if it is not yet installed.
+Once you have installed and configured `standard`, you can proceed to install the ide-plugin-sublime plugin if it is not yet installed.
 
 ### Plugin installation
 Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
@@ -34,7 +34,7 @@ To install via Package Control, do the following:
 
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
-1. When the plugin list appears, type `standard`. Among the entries you should see `SublimeLinter-contrib-standard`. If that entry is not highlighted, use the keyboard or mouse to select it.
+1. When the plugin list appears, type `standard`. Among the entries you should see `ide-plugin-sublime`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Automatic Formatting
 Want to automatically format your text? 

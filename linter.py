@@ -8,17 +8,17 @@
 # License: MIT
 #
 
-"""This module exports the Standard plugin class."""
+"""This module exports the ModernStandard plugin class."""
 
 from SublimeLinter.lint import NodeLinter
 
 
 class Standard(NodeLinter):
 
-    """Provides an interface to standard."""
+    """Provides an interface to modern-standard."""
 
     syntax = ('javascript', 'html', 'javascriptnext', 'javascript 6to5', 'javascript (babel)')
-    cmd = 'standard --stdin --verbose'
+    cmd = 'modern-standard --stdin --verbose'
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 3.7.2'
